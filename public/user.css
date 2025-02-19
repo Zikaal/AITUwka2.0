@@ -1,0 +1,271 @@
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-left: 220px;
+    margin-top: 5px;
+    padding: 20px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-user {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.edit-profile-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4267b2;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-profile-btn:hover, .submit-btn-user:hover {
+    transform: scale(1.1);
+}
+
+.info {
+    margin-left: 220px;
+    background-color: #fff;
+    padding: 15px; 
+    border-radius: 5px; 
+    margin-bottom: 50px;
+}
+
+.logout-btn {
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+.submit-btn-user {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4267b2;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn-user:hover {
+    transform: scale(1.1);
+    background-color: #29487d;
+}
+
+/* Section Headings */
+.section-heading {
+    color: #4267b2;
+    margin-top: 0;
+}
+
+.logout-section {
+    border-top: 1px solid #e0e0e0; 
+    margin-top: 20px; 
+    padding-top: 20px; 
+    margin-left: 220px;
+}
+
+.form-label {
+    color: #666;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f2f5;
+    color: #333;
+    width: 720px;
+    margin-bottom: 15px;
+}
+
+.form-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f2f5;
+    color: #333;
+    width: 700px;
+}
+
+.submit-btn-user {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4267b2;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.description-detail {
+    margin: 0 0 10px 0px; 
+    color: #666;
+}
+
+.description {
+    margin-left: 220px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.description-list {
+    margin: 0;
+    padding: 0;
+}
+
+.description-term {
+    font-weight: bold;
+    color: #333;
+}
+
+.Hobbies {
+    margin-left: 220px; 
+    background-color: #fff; 
+    padding: 15px; 
+    border-radius: 5px; 
+    margin-bottom: 50px;
+}
+
+.Movies {
+    margin-left: 220px; 
+    background-color: #fff; 
+    padding: 15px; 
+    border-radius: 5px; 
+    margin-bottom: 50px;
+}
+
+.Quotes {
+    margin-left: 220px; 
+    background-color: #fff; 
+    padding: 15px; 
+    border-radius: 5px; 
+    margin-bottom: 50px;
+}
+
+.quote {
+    font-style: italic; 
+    color: #555;
+}
+
+.Books {
+    margin-left: 220px; 
+    background-color: #fff; 
+    padding: 15px; 
+    border-radius: 5px; 
+    margin-bottom: 50px;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 600px) {
+    /* Центровка и сжатие основного контента */
+    body {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .profile-header, .info, .logout-section, .description, .Hobbies, .Movies, .Quotes, .Books {
+        margin: 0 auto !important; 
+        padding: 10px !important;
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+
+    /* Адаптация шапки профиля */
+    .profile-header {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .profile-user {
+        width: 60px !important;
+        height: 60px !important;
+        margin: 0 auto 10px !important;
+    }
+
+    .profile-info {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .edit-profile-btn, .submit-btn-user, .logout-btn {
+        font-size: 12px !important;
+        padding: 8px !important;
+        width: 100% !important;
+        max-width: 200px !important;
+        margin: 5px auto !important;
+    }
+
+    .form-select, .form-input {
+        width: 100% !important;
+        max-width: 200px !important;
+        margin: 5px auto !important;
+    }
+
+    .section-heading {
+        font-size: 16px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .description-detail, .quote, .description-term {
+        font-size: 14px !important;
+    }
+
+    /* Упрощение списка интересов и фильмов */
+    .Hobbies ul, .Movies ol {
+        padding-left: 20px !important;
+        text-align: left !important;
+    }
+
+    /* Адаптация кнопок действий */
+    .post-actions {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    .action-btn {
+        margin-top: 5px !important;
+        width: 100% !important;
+    }
+
+    /* Дополнительные стили для мобильной версии */
+    .description, .Hobbies, .Movies, .Quotes, .Books {
+        text-align: center !important;
+    }
+
+    .section-heading, .form-label {
+        text-align: center !important;
+    }
+
+    /* Убираем отступы слева */
+    .info, .logout-section, .description, .Hobbies, .Movies, .Quotes, .Books {
+        margin-left: 0 !important;
+    }
+}

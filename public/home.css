@@ -1,0 +1,189 @@
+.new-post, .post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.new-post h2, .post h2 {
+    font-size: 22px;
+    color: #4267b2;
+}
+
+.post-textarea {
+    width: 90%;
+    height: 100px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f0f2f5;
+    resize: none;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+.post-title{
+    width: 90%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f0f2f5;
+    resize: none;
+    font-size: 16px;
+    transition: border 0.3s ease;
+    margin-bottom: 2px;
+
+}
+
+.post-title:focus{
+    border-color: #4267b2;
+    outline: none;
+}
+
+.post-textarea:focus {
+    border-color: #4267b2;
+    outline: none;
+}
+
+.post-option {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f2f5;
+    color: #666;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #29487d;
+    transform: scale(1.05);
+}
+
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.action-btn {
+    background-color: #f0f2f5;
+    color: #666;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: #abb4c5;
+    transform: scale(1.05);
+}
+
+/* Общие стили для кнопок в постах */
+.post-actions button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Кнопка Comment */
+  .action-btn {
+    background-color: #f0f2f5;
+    color: #666;
+  }
+  .action-btn:hover {
+    background-color: #abb4c5;
+    transform: scale(1.05);
+  }
+  
+  /* Кнопка Edit */
+  .edit-btn {
+    background-color: #4267b2;
+    color: #fff;
+  }
+  .edit-btn:hover {
+    background-color: #29487d;
+    transform: scale(1.05);
+  }
+  
+  /* Кнопка Delete */
+  .delete-btn {
+    background-color: #e53935;
+    color: #fff;
+  }
+  .delete-btn:hover {
+    background-color: #c62828;
+    transform: scale(1.05);
+  }
+  
+
+/* Стили для мобильных устройств */
+@media (max-width: 600px) {
+    /* Центровка и сжатие основного контента */
+    body {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    /* Основные блоки и заголовки */
+    .new-post, .post {
+        padding: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .new-post h2, .post h2 {
+        font-size: 18px !important;
+        text-align: center !important;
+    }
+
+    /* Поля ввода текста */
+    .post-textarea, .post-title {
+        width: 100% !important;
+        font-size: 14px !important;
+        padding: 8px !important;
+    }
+
+    /* Кнопки отправки и действий */
+    .submit-btn, .action-btn {
+        font-size: 14px !important;
+        padding: 10px !important;
+        width: 100% !important;
+    }
+
+    .post-actions {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 10px !important;
+    }
+
+    .action-btn {
+        margin-top: 5px !important;
+    }
+
+    /* Текущий время */
+    #current-time {
+        font-size: 16px !important;
+        padding: 8px !important;
+        margin-top: 10px!important;
+    }
+}

@@ -1,0 +1,166 @@
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+
+.card-img-top {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover;
+  }
+
+#content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+#events-section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4267b2;
+}
+
+.event-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.event-img {
+    width: 600px;
+    margin-right: 15px;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.event-details {
+    color: #555;
+    margin: 5px 0;
+}
+
+.event-button {
+    width: 100px; 
+    height: 30px; 
+    font-size: 14px; 
+    margin: 10px auto; 
+    display: flex;
+    align-items: center; /* Вертикальное центрирование текста */
+    justify-content: center; /* Горизонтальное центрирование текста */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4267b2;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.event-button:hover {
+    background-color: #abb4c5;
+    transform: scale(1.05);
+}
+
+.event-button.picked {
+    background-color: lightgray; /* Светло-серый фон */
+    color: black; /* Чёрный текст */
+    transform: scale(1); /* Убираем увеличение при выборе */
+}
+
+/* Адаптивные стили для мобильных устройств */
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 600px) {
+    /* Основной контент и секция событий */
+    #content, #events-section {
+        margin: 0 auto !important;
+        padding: 10px !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    /* Заголовок секции */
+    .section-title {
+        font-size: 18px !important;
+        text-align: center !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Событие в вертикальном формате */
+    .event-item {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 15px !important;
+        border: 1px solid #ddd !important;
+        border-radius: 8px !important;
+        margin: 10px 0 !important;
+        width: 100% !important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    /* Изображение события */
+    .event-img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+        margin-bottom: 10px !important;
+        border-radius: 8px !important;
+        object-fit: cover !important;
+    }
+
+    /* Информация о событии */
+    .event-info {
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .event-title {
+        font-size: 16px !important;
+        margin: 5px 0 !important;
+        width: 100% !important;
+    }
+
+    .event-details {
+        font-size: 14px !important;
+        margin: 5px 0 !important;
+        width: 100% !important;
+        color: #555 !important;
+    }
+
+    /* Кнопка участия */
+    .event-button {
+        width: 90% !important;
+        max-width: 200px !important;
+        font-size: 14px !important;
+        padding: 10px !important;
+        margin: 10px auto !important;
+        text-align: center !important;
+        background-color: #4267b2 !important;
+        color: white !important;
+        border-radius: 5px !important;
+    }
+}
+
+
+
+

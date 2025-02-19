@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="AITUwka" data-ru="АЙТУшка">AITUwka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="saves.css">
+    <link rel="stylesheet" href="checkbox.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navigate navbar-expand-lg navbar-light bg-light px-4">
+            <a id="navbar-brand" href="home.html" data-en="AITUwka" data-ru="АЙТУшка">AITUwka</a>
+            <button class="sidebar-toggle-btn" id="sidebarToggleBtn">☰</button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ.html" data-en="FAQs" data-ru="Часто задаваемые вопросы">FAQs</a>
+                    </li>
+                </ul>
+                <a href="user.html">
+                    <img src="img/user.png" alt="Profile" class="profile-pic ms-3" style="height: 40px;" data-en="Profile" data-ru="Профиль">
+                </a>
+            </div>
+        </nav>
+    </header>
+        
+    <aside class="sidebar col-md-2">
+        <a href="user.html" tabindex="0" data-en="User" data-ru="Пользователь">User</a>
+        <a href="saves.html" tabindex="0" data-en="Search For Friends" data-ru="Искать друзей">Search For Friends</a>
+        <a href="marketplace.html" tabindex="0" data-en="Marketplace" data-ru="Маркетплейс">Marketplace</a>
+        <a href="events.html" tabindex="0" data-en="Events" data-ru="События">Events</a>
+        
+        <div class="language-selector">
+            <label for="language" data-en="Select Language:" data-ru="Выберите язык:">Select Language:</label>
+            <select id="language" class="form-select">
+                <option value="en" data-en="English" data-ru="Английский">English</option>
+                <option value="ru" data-en="Русский" data-ru="Русский">Русский</option>
+            </select>
+            
+        </div>    
+    </aside>
+
+    <main id="content" class="p-5">
+        <section id="searchfor-friends">
+            <h2 class="section-title mb-4" data-en="Search for friends" data-ru="Искать друзей">Search for friends</h2>
+            
+            <div class="d-flex flex-wrap">
+
+                <div class="card mb-4 me-3" style="width: 15rem;">
+                    <img class="card-img-top" src="img/student1.jpg" alt="Student Profile">
+                    <div class="card-body">
+                        <h5 class="card-title" data-en="Aruzhan Karimova" data-ru="Аружан Каримова">Aruzhan Karimova</h5>
+                        <p class="card-text" data-en="CS-2309" data-ru="CS-2309">CS-2309</p>
+                        <div class="card-buttons"> 
+                            <a href="#" class="btn-sff event-button interested" data-id="1" data-en="Interested" data-ru="Интересует">Interested</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4 me-3" style="width: 15rem;">
+                    <img class="card-img-top" src="img/student2.jpg" alt="Student Profile">
+                    <div class="card-body">
+                        <h5 class="card-title" data-en="Nursultan Bekzat" data-ru="Нурсултан Бекзат">Nursultan Bekzat</h5>
+                        <p class="card-text" data-en="IT-2308" data-ru="IT-2308">IT-2308</p>
+                        <div class="card-buttons"> 
+                            <a href="#" class="btn-sff event-button interested" data-id="2" data-en="Interested" data-ru="Интересует">Interested</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4 me-3" style="width: 15rem;">
+                    <img class="card-img-top" src="img/student3.jpg" alt="Student Profile">
+                    <div class="card-body">
+                        <h5 class="card-title" data-en="Aigerim Sadykova" data-ru="Айгерим Садыкова">Aigerim Sadykova</h5>
+                        <p class="card-text" data-en="SE-2331" data-ru="SE-2331">SE-2331</p>
+                        <div class="card-buttons"> 
+                            <a href="#" class="btn-sff event-button interested" data-id="3" data-en="Interested" data-ru="Интересует">Interested</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4 me-3" style="width: 15rem;">
+                    <img class="card-img-top" src="img/student4.jpg" alt="Student Profile">
+                    <div class="card-body">
+                        <h5 class="card-title" data-en="Damir Kairat" data-ru="Дамир Кайрат">Damir Kairat</h5>
+                        <p class="card-text" data-en="MCS-2301" data-ru="MCS-2301">MCS-2301</p>
+                        <div class="card-buttons"> 
+                            <a href="#" class="btn-sff event-button interested" data-id="4" data-en="Interested" data-ru="Интересует">Interested</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4 me-3" style="width: 15rem;">
+                    <img class="card-img-top" src="img/student5.jpg" alt="Student Profile">
+                    <div class="card-body">
+                        <h5 class="card-title" data-en="Altynbek Zhumabaev" data-ru="Алтынбек Жумабаев">Altynbek Zhumabaev</h5>
+                        <p class="card-text" data-en="BD-2305" data-ru="BD-2305">BD-2305</p>
+                        <div class="card-buttons"> <!-- Новый контейнер для кнопок -->
+                            <a href="#" class="btn-sff event-button interested" data-id="5" data-en="Interested" data-ru="Интересует">Interested</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="checkbox.js"></script>
+    <script src="language.js"></script> 
+    <script src="sidebar.js"></script>
+    <script src="saves.js"></script>
+</body>    
+</html>

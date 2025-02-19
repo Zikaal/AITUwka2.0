@@ -1,0 +1,340 @@
+body.night-mode {
+    background-color: #181818 !important; /* Dark background */
+    color: black !important; /* White text */
+}
+
+body.night-mode header {
+    background-color: #282c34; /* Darker header color */
+}
+header.night-mode .navigate{
+    background-color: #343a40 !important; /* Серый фон для секций хобби, фильмов и книг */
+    color: white !important; /* Белый текст для этих секций */
+}
+header.night-mode .sidebar-toggle-btn{
+    color:white
+
+}
+header.night-mode .nav-link {
+    color: #f8f9fa !important;; /* Белый текст для навигационных ссылок */
+}
+
+header.night-mode .nav-link.active {
+    color: #ffffff !important;; /* Цвет активной ссылки */
+}
+
+body.night-mode .sidebar {
+    background-color: #282c34; /* Dark sidebar color */
+}
+
+body.night-mode .sidebar a {
+    color: white; /* White text for sidebar links */
+}
+
+body.night-mode .new-post,
+body.night-mode .post {
+    background-color: #282c34; /* Dark post background */
+    color: white; /* White text for posts */
+}
+
+body.night-mode .new-post h2,
+body.night-mode .post h2 {
+    color: #e2e2e2; /* Light gray for post titles */
+}
+
+body.night-mode .post-textarea,
+body.night-mode .post-title {
+    background-color: #343a40; /* Darker textarea background */
+    color: white; 
+}
+
+body.night-mode .submit-btn {
+    background-color: #007bff; /* Blue for the button */
+    color: white;
+}
+
+body.night-mode .action-btn {
+    background-color: #343a40; /* Darker button background */
+    color: white;
+}
+
+body.night-mode .post-image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* More prominent shadow */
+}
+
+body.night-mode footer {
+    background-color: #181818; /* Darker footer background */
+}
+
+body.night-mode .profile-pic {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* White shadow */
+}
+
+body.night-mode .info {
+    background-color: #282c34;
+    color: white;
+}
+
+body.night-mode .description {
+    background-color: #282c34;
+    color: white;
+}
+
+body.night-mode .profile-header {
+    background-color:#343a40 !important;
+    color: white !important;
+}
+
+body.night-mode .logout-section {
+    background-color:#343a40 !important;
+    color: white !important;
+}
+
+body.night-mode .description-detail {
+    color: #e2e2e2;
+}
+
+body.night-mode .description-term {
+    color: white;
+}
+
+body.night-mode .Hobbies {
+    background-color: #282c34;
+    color: white;
+}
+
+body.night-mode .Movies {
+    background-color: #282c34;
+    color: white;
+}
+
+body.night-mode .Quotes {
+    background-color: #282c34;
+    color: white;
+}
+
+body.night-mode .quote {
+    color: #e2e2e2;
+}
+
+body.night-mode .Books {
+    background-color: #282c34;
+    color: white;
+}
+
+body.night-mode #current-time {
+    background-color: #282c34;
+    color: #e2e2e2;
+}
+
+body.night-mode #colorBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+body.night-mode .bg-toggle {
+    background-color: #282c34;
+}
+
+body.night-mode .bg-label {
+    color: #e2e2e2;
+}
+
+.nav-link.night-mode
+
+.theme-toggle {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px; /* Отступ между текстом и чекбоксом */
+    margin-right: 10px;
+}
+
+.theme-toggle-checkbox {
+    display: none; /* Скрыть стандартный чекбокс */
+}
+
+.theme-toggle-button {
+    width: 50px; /* Ширина овала */
+    height: 25px; /* Высота овала */
+    background-color: #ddd; /* Цвет фона овала */
+    border-radius: 25px; /* Овал */
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle-button::before {
+    content: '';
+    position: absolute;
+    width: 20px; /* Ширина кружка */
+    height: 20px; /* Высота кружка */
+    background-color: white; /* Цвет кружка */
+    border-radius: 50%; /* Кружок */
+    top: 50%; /* Вертикальное выравнивание */
+    left: 5px; /* Положение кружка */
+    transform: translateY(-50%); /* Центрирование кружка */
+    transition: left 0.3s;
+}
+
+.theme-toggle-checkbox:checked + .theme-toggle-button {
+    background-color: #4CAF50; /* Цвет фона при включении */
+}
+
+.theme-toggle-checkbox:checked + .theme-toggle-button::before {
+    left: calc(100% - 25px); /* Переместить кружок вправо */
+}
+body.night-mode #events-section h2 {
+    color: white !important; /* Белый текст для заголовка Events */
+}
+
+body.night-mode #events-section {
+    background-color: #343a40 !important; /* Серый фон для секции с событиями */
+}
+
+body.night-mode #marketplace-section h2 {
+    color: white !important; /* Белый текст для заголовка Marketplace */
+}
+
+
+body.night-mode #marketplace-section {
+    background-color: #343a40 !important; /* Серый фон для секции с предметами */
+}
+
+body.night-mode .market-item {
+    background-color: #282c34 !important; /* Темно-серый фон для карточек с предметами */
+    color: white !important; /* Белый текст для карточек с предметами */
+}
+
+body.night-mode .market-item h3,
+body.night-mode .market-item p {
+    color: white !important; /* Белый текст для заголовков и цены предметов */
+}
+
+body.night-mode .market-item .btn {
+    background-color: #007bff !important; /* Синяя кнопка в ночном режиме */
+    color: white !important; /* Белый текст для кнопки */
+}
+body.night-mode .card {
+    background-color: #282c34 !important; /* Темно-серый фон для карточек с событиями */
+    color: white !important; /* Белый текст для карточек */
+}
+
+body.night-mode .card-title,
+body.night-mode .card-text {
+    color: white !important; /* Белый текст для заголовков и описания событий */
+}
+
+body.night-mode .btn {
+    background-color: #007bff !important; /* Синяя кнопка в темном режиме */
+    color: white !important; /* Белый текст для кнопки */
+}
+body.night-mode .group {
+    background-color: #282c34; /* Серый фон для окна группы */
+    color: white; /* Белый текст внутри группы */
+}
+
+body.night-mode .group-item {
+    background-color: #343a40; /* Более светлый серый фон для каждой группы */
+    color: white; /* Белый текст */
+}
+
+body.night-mode .group-item h3,
+body.night-mode .group-item p {
+    color: white !important; /* Белый текст для заголовков и описания групп */
+}
+
+body.night-mode .member-bt {
+    background-color: #007bff; /* Синяя кнопка в ночном режиме */
+    color: white; /* Белый текст на кнопке */
+}
+body.night-mode .cmnt {
+    color: white !important; /* Белый текст для постов */
+}
+
+body.night-mode .saved-item {
+    background-color: #343a40 !important; /* Темно-серый фон для сохраненных элементов */
+    color: white !important; /* Белый текст внутри сохраненных элементов */
+}
+
+body.night-mode .saved-item h3,
+body.night-mode .saved-item p {
+    color: white !important; /* Белый текст для заголовков и описания сохраненных элементов */
+}
+
+body.night-mode .save-png {
+    filter: invert(100%); /* Инвертирование цвета для превращения картинки в белую */
+}
+body.night-mode .saved-item {
+    background-color: #343a40 !important; /* Темно-серый фон для сохраненных элементов */
+    color: white !important; /* Белый текст внутри сохраненных элементов */
+}
+
+body.night-mode .saved-item h3,
+body.night-mode .saved-item p {
+    color: white !important; /* Белый текст для заголовков и описания сохраненных элементов */
+}
+body.night-mode main.saves {
+    background-color: #343a40 !important; /* Темно-серый фон для всего блока с сохраненными элементами */
+    color: white; /* Белый текст для всего блока */
+    padding: 20px; /* Добавить отступы для удобства */
+    border-radius: 8px; /* Закругленные углы (по желанию) */
+}
+
+/* не удалять 
+body.night-mode .bg-light, 
+body.night-mode .card, 
+body.night-mode .container, 
+body.night-mode .section, 
+body.night-mode .main {
+    background-color: #343a40 !important;  Серый фон для всех белых окон 
+    color: white !important;  Белый текст внутри 
+} */
+
+
+
+
+
+body.night-mode .description {
+    background-color: #343a40 !important; /* Серый фон для описаний */
+    color: white !important; /* Белый текст для описаний */
+}
+
+body.night-mode .info {
+    background-color: #343a40 !important; /* Серый фон для информации */
+    color: white !important; /* Белый текст для информации */
+}
+
+body.night-mode .Hobbies,
+body.night-mode .Movies,
+body.night-mode .Books,
+body.night-mode .quote-section{
+    background-color: #343a40 !important; /* Серый фон для секций хобби, фильмов и книг */
+    color: white !important; /* Белый текст для этих секций */
+}
+
+body.night-mode .section-heading {
+    color: white !important; /* Белый текст для заголовков секций */
+}
+
+body.night-mode .saved-item {
+    background-color: #343a40 !important; /* Темно-серый фон для сохраненных элементов */
+    color: white !important; /* Белый текст внутри сохраненных элементов */
+}
+body.night-mode .quote {
+    background-color: #343a40; /* Темно-серый фон для каждой цитаты */
+    color: white; /* Белый текст для цитат */
+    padding: 10px; /* Отступы вокруг цитат для удобства */
+    border-radius: 5px; /* Закругленные углы для цитат */
+}
+body.night-mode .description-section {
+    background-color: #343a40; /* Темно-серый фон для ночного режима */
+    color: #e2e2e2; /* Светло-серый цвет текста */
+}
+
+body.night-mode #searchfor-friends {
+    background-color: #343a40; /* Темно-серый фон для ночного режима */
+    color: #e2e2e2;
+}
+body.night-mode .btn-sff event-button interested picked {
+    background-color: lightgray; /* Цвет кнопки "Picked" (серый) */
+    color: black; /* Цвет текста на серой кнопке */
+}

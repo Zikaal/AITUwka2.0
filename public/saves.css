@@ -1,0 +1,165 @@
+/* Основное оформление для карточек */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.card-img-top {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover;
+}
+
+#content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+#searchfor-friends {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4267b2;
+}
+
+.event-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.event-img {
+    width: 600px;
+    margin-right: 15px;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.event-details {
+    color: #555;
+    margin: 5px 0;
+}
+
+.event-buttons {
+    display: flex; /* Размещение кнопок в строку */
+    justify-content: center; /* Центрирование кнопок */
+    gap: 10px; /* Отступ между кнопками */
+}
+
+.event-button {
+    display: flex; /* Используем flex для кнопок */
+    align-items: center; /* Центрируем текст по вертикали */
+    justify-content: center; /* Центрируем текст по горизонтали */
+    width: 100px; 
+    height: 30px; 
+    font-size: 14px; 
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white; /* Цвет текста */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.event-button.interested {
+    background-color: #4267b2; /* Цвет кнопки "Interested" (синий) */
+    color: white;
+}
+
+.event-button.not-interested {
+    background-color: lightgray; /* Цвет кнопки "Not Interested" (серый) */
+}
+
+.event-button.picked {
+    background-color: lightgray; /* Цвет кнопки "Picked" (серый) */
+    color: black; /* Цвет текста на серой кнопке */
+}
+
+.event-button.cancel {
+    background-color: lightgray; /* Цвет кнопки "Cancel" (серый) */
+    color: black; /* Цвет текста на серой кнопке */
+}
+
+.event-button:hover {
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+.event-button.picked {
+    background-color: lightgray; /* Цвет кнопки "Picked" (серый) */
+    color: black; /* Цвет текста на серой кнопке */
+}
+
+/* General mobile adjustments */
+@media (max-width: 600px) {
+    /* Adjust the content margin */
+    #content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    /* Make the card more responsive */
+    .card-body {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+    }
+
+    /* Search for friends section adjustments */
+    #searchfor-friends {
+        padding: 10px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /* Adjust the event item layout */
+    .event-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-img {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .event-info {
+        text-align: center;
+    }
+
+    /* Center and resize buttons for mobile */
+    .event-button {
+        width: 80%;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .event-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
+

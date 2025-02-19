@@ -1,0 +1,24 @@
+{
+  "name": "aituwka-main",
+  "version": "1.0.0",
+  "description": "**AITUwka** is a website developed for the students and faculty of *Astana IT University*. Built with HTML, CSS, and JavaScript, the platform offers a variety of features to help users interact, share information, and participate in the university's community.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
+    "morgan": "^1.10.0",
+    "open": "^10.1.0"
+  }
+}

@@ -1,0 +1,252 @@
+#content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Отступ от основного контента */
+}
+
+.categories {
+    margin-bottom: 20px; /* Отступ между категориями и корзиной */
+}
+
+.cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px; /* Увеличенные отступы для лучшего восприятия */
+    background-color: #007bff; /* Цвет фона */
+    border-radius: 8px; /* Скругленные углы */
+    margin-left: 10px; 
+    color: white; /* Цвет текста */
+    transition: background-color 0.3s; /* Плавный переход при наведении */
+}
+
+.cart:hover {
+    background-color: #0056b3; /* Темнее при наведении */
+}
+
+.cart-img {
+    display: flex;
+    border-radius: 8px;
+    height: 50px; /* Увеличенная высота для лучшего восприятия */
+    width: 50px; /* Увеличенная ширина для лучшего восприятия */
+    margin-right: 10px; /* Отступ между изображением и текстом */
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column; /* Вертикальное выравнивание элементов корзины */
+    padding: 10px;
+    background-color: #f8f9fa; /* Цвет фона для элементов корзины */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для элементов корзины */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between; /* Выравнивание элементов по краям */
+    align-items: center; /* Центрирование по вертикали */
+    padding: 10px 0; /* Отступы сверху и снизу */
+    border-bottom: 1px solid #ddd; /* Разделитель между элементами */
+}
+
+.cart-item:last-child {
+    border-bottom: none; /* Убираем разделитель у последнего элемента */
+}
+
+.item-title {
+    font-size: 16px; /* Размер шрифта для названия элемента */
+    color: #333; /* Цвет текста */
+}
+
+.item-price {
+    font-size: 16px; /* Размер шрифта для цены */
+    color: #28a745; /* Цвет цены */
+}
+
+.remove-btn {
+    background-color: transparent; /* Прозрачный фон для кнопки удаления */
+    color: #dc3545; /* Цвет текста кнопки удаления */
+    border: none; /* Убираем границы */
+    cursor: pointer; /* Указатель курсора при наведении */
+    font-size: 14px; /* Размер шрифта */
+}
+
+.remove-btn:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.purchase-notification {
+    display: none; /* Скрываем по умолчанию */
+    margin-top: 10px; /* Расстояние от кнопки */
+    color: #28a745; /* Зеленый цвет текста */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#marketplace-section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 24px;
+    color: #4267b2;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.market-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.market-img {
+    width: 200px; /* Фиксированная ширина изображения */
+    height: 300px; /* Фиксированная высота изображения */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover; /* Картинка будет масштабироваться и обрезаться */
+}
+
+.item-info {
+    text-align: center;
+}
+
+.item-title {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #666;
+}
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    margin-left: auto;
+}
+.purchase-notification {
+    display: none; /* Скрываем по умолчанию */
+    margin-top: 10px; /* Расстояние от кнопки */
+    color: #28a745; /* Зеленый цвет текста */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 600px) {
+    /* Основной контент и боковая панель */
+    #content, #marketplace-section {
+        margin-left: 0 !important;
+        padding: 15px !important;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Боковая панель (скрытие на мобильных) */
+    #sidebar {
+        display: none !important;
+    }
+
+    /* Заголовок секции */
+    .section-title {
+        font-size: 20px !important;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    /* Контейнер для элементов */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Элементы маркетплейса */
+    .market-item {
+        padding: 15px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .market-img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .item-info {
+        text-align: center !important;
+    }
+
+    .item-title {
+        font-size: 16px !important;
+        margin: 5px 0 !important;
+    }
+
+    .item-price {
+        font-size: 14px !important;
+        color: #28a745;
+    }
+
+    /* Корзина */
+    .cart {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 10px !important;
+        margin: 15px auto !important;
+    }
+
+    .cart-img {
+        width: 40px !important;
+        height: 40px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .cart-items {
+        padding: 8px !important;
+        box-shadow: none !important;
+    }
+
+    .cart-item {
+        padding: 8px 0 !important;
+        font-size: 14px !important;
+    }
+
+    .item-title, .item-price {
+        font-size: 14px !important;
+    }
+
+    /* Кнопка удаления */
+    .remove-btn {
+        font-size: 12px !important;
+    }
+
+    /* Уведомление о покупке */
+    .purchase-notification {
+        font-size: 14px !important;
+        margin-top: 10px;
+    }
+}

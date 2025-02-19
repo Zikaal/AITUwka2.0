@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="AITUwka" data-ru="АЙТУшка">AITUwka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navigate navbar-expand-lg navbar-light bg-light px-4">
+            <a id="navbar-brand" href="home.html" data-en="AITUwka" data-ru="АЙТУшка">AITUwka</a>
+            <button class="sidebar-toggle-btn" id="sidebarToggleBtn" data-en="☰" data-ru="☰">☰</button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ.html" data-en="FAQs" data-ru="Часто задаваемые вопросы">FAQs</a>
+                    </li>
+                </ul>
+                <a href="user.html">
+                    <img src="img/user.png" alt="Profile" class="profile-pic ms-3" style="height: 40px;" data-en="Profile" data-ru="Профиль">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="sidebar col-md-2">
+        <a href="user.html" tabindex="0" data-en="User" data-ru="Пользователь">User</a>
+        <a href="saves.html" tabindex="0" data-en="Search For Friends" data-ru="Искать друзей">Search For Friends</a>
+        <a href="marketplace.html" tabindex="0" data-en="Marketplace" data-ru="Маркетплейс">Marketplace</a>
+        <a href="events.html" tabindex="0" data-en="Events" data-ru="События">Events</a>
+
+        <div class="language-selector">
+            <label for="language" data-en="Select Language:" data-ru="Выберите язык:">Select Language:</label>
+            <select id="language" class="form-select">
+                <option value="en" data-en="English" data-ru="Английский">English</option>
+                <option value="ru" data-en="Русский" data-ru="Русский">Русский</option>
+            </select>
+            
+        </div>    
+    </aside>
+
+    <section class="faq">
+        <div class="faq-item">
+            <div class="faq-question" data-en="What is this social network and who created it?" data-ru="Что это за социальная сеть и кто её создал?">What is this social network and who created it?</div>
+            <div class="faq-answer" data-en="Our social network was created by three university students to simplify interactions between students, professors, and staff." data-ru="Наша социальная сеть была создана тремя студентами университета для упрощения взаимодействия между студентами, профессорами и сотрудниками.">Our social network was created by three university students to simplify interactions between students, professors, and staff.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" data-en="What features are available on this social network?" data-ru="Какие функции доступны в этой социальной сети?">What features are available on this social network?</div>
+            <div class="faq-answer" data-en="You can create groups, save important posts, chat with friends, share information, and participate in discussions." data-ru="Вы можете создавать группы, сохранять важные посты, общаться с друзьями, делиться информацией и участвовать в обсуждениях.">You can create groups, save important posts, chat with friends, share information, and participate in discussions.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" data-en="How do I register?" data-ru="Как мне зарегистрироваться?">How do I register?</div>
+            <div class="faq-answer" data-en="You can register using your university email and create a unique profile with your personal information." data-ru="Вы можете зарегистрироваться, используя свою университетскую электронную почту, и создать уникальный профиль с вашей личной информацией.">You can register using your university email and create a unique profile with your personal information.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" data-en="Can I join multiple groups?" data-ru="Могу ли я присоединиться к нескольким группам?">Can I join multiple groups?</div>
+            <div class="faq-answer" data-en="Yes, you can be a member of several groups related to your interests, studies, or extracurricular activities." data-ru="Да, вы можете быть членом нескольких групп, связанных с вашими интересами, учебой или внеучебной деятельностью.">Yes, you can be a member of several groups related to your interests, studies, or extracurricular activities.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" data-en="How can I find my friends?" data-ru="Как я могу найти своих друзей?">How can I find my friends?</div>
+            <div class="faq-answer" data-en="You can use the search bar to find users by name, faculty, or interests." data-ru="Вы можете использовать строку поиска, чтобы найти пользователей по имени, факультету или интересам.">You can use the search bar to find users by name, faculty, or interests.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" data-en="What should I do if I forget my password?" data-ru="Что делать, если я забыл пароль?">What should I do if I forget my password?</div>
+            <div class="faq-answer" data-en="On the login page, select 'Forgot password?' and follow the instructions to reset it." data-ru="На странице входа выберите 'Забыли пароль?' и следуйте инструкциям для его сброса.">On the login page, select 'Forgot password?' and follow the instructions to reset it.</div>
+        </div>
+    </section>
+
+    <script src="FAQ.js"></script>
+    <script src="sidebar.js"></script>
+    <script src="keydown.js"></script>
+    <script src="checkbox.js"></script>
+    <script src="language.js"></script>
+</body>
+</html>
