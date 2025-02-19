@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Создание нового поста
     async function createPost(postData) {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:3000/api/posts", {
+      const response = await fetch("https://aituwka2-0.onrender.com/api/posts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
         try {
           const token = localStorage.getItem("token");
-          const response = await fetch(`http://localhost:3000/api/posts/${postId}`, {
+          const response = await fetch(`https://aituwka2-0.onrender.com/api/posts/${postId}`, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.deletePost = async function(postId) {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch(`http://localhost:3000/api/posts/${postId}`, {
+        const response = await fetch(`https://aituwka2-0.onrender.com/api/posts/${postId}`, {
           method: "DELETE",
           headers: { "Authorization": `Bearer ${token}` }
         });
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Получение и отображение всех постов
     async function fetchAllPosts() {
       try {
-        const response = await fetch("http://localhost:3000/api/posts");
+        const response = await fetch("https://aituwka2-0.onrender.com/api/posts");
         if (!response.ok) {
           throw new Error("Failed to fetch posts.");
         }
@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch(`http://localhost:3000/api/posts/${postId}/comments`, {
+        const response = await fetch(`https://aituwka2-0.onrender.com/api/posts/${postId}/comments`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Получение комментариев для поста с возможностью inline-редактирования
     async function fetchComments(postId, postOwnerId) {
       try {
-        const response = await fetch(`http://localhost:3000/api/posts/${postId}/comments`);
+        const response = await fetch(`https://aituwka2-0.onrender.com/api/posts/${postId}/comments`);
         if (!response.ok) {
           throw new Error("Failed to fetch comments.");
         }
@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const newText = inputField.value.trim() || currentText;
         try {
           const token = localStorage.getItem("token");
-          const response = await fetch(`http://localhost:3000/api/posts/${postId}/comments/${commentId}`, {
+          const response = await fetch(`https://aituwka2-0.onrender.com/api/posts/${postId}/comments/${commentId}`, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",
@@ -326,7 +326,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.deleteComment = async function(postId, commentId, postOwnerId) {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch(`http://localhost:3000/api/posts/${postId}/comments/${commentId}`, {
+        const response = await fetch(`https://aituwka2-0.onrender.com/api/posts/${postId}/comments/${commentId}`, {
           method: "DELETE",
           headers: { "Authorization": `Bearer ${token}` }
         });
