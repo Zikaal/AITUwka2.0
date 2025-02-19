@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Функция загрузки профиля с сервера
     async function loadUserProfile() {
       try {
-        const response = await fetch("http://localhost:3000/api/auth/profile", {
+        const response = await fetch("https://aituwka2-0.onrender.com/api/auth/profile", {
           headers: {
             "Authorization": `Bearer ${token}`
           }
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (password) updateData.password = password;
   
       try {
-        const response = await fetch(`http://localhost:3000/api/users/${userId}`, {
+        const response = await fetch(`https://aituwka2-0.onrender.com/api/users/${userId}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
