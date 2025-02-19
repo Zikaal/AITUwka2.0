@@ -5,13 +5,11 @@ const path = require('path');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const Joi = require('joi');
-const morgan = require('morgan'); // Для логирования запросов
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(morgan('dev')); // Логирование HTTP-запросов
 
 // Подключение к MongoDB
 mongoose.connect(process.env.MONGO_URI, {
