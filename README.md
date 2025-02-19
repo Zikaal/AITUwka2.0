@@ -45,38 +45,22 @@ AITUwka is a social platform created for **Astana IT University** students. It e
 
 ## Project Overview
 
-This project is built with **Node.js** and **Express**, using **MongoDB** for data storage. It is a continuation of the front-end project from the Web Technologies-1 course, now enhanced with a backend for user registration, login, and basic CRUD operations on posts and comments.
+The project is split into the following main modules:
 
-### Key Features and Pages
+- **models/** — contains the Mongoose models for `User`, `Post`, and `Comment`.
+- **controllers/** — contains the business logic (creating posts, registration, login, etc.).
+- **routes/** — contains the route files (endpoints) for different entities (`authRoutes`, `userRoutes`, `postRoutes`, `commentRoutes`).
+- **middlewares/** — contains middleware, for example `authMiddleware` for JWT verification.
+- **validations/** — contains Joi schemas for validation (`schemas.js`).
+- **config/** — holds the database connection settings (`db.js`).
+- **public/** — folder with static files (HTML, CSS, JS for the frontend).
 
-1. **Home Page**  
-   Users can post photos and videos, view and engage with other students’ content, creating an active social space.
-
-2. **Marketplace**  
-   A platform where students can buy and sell books, personal items, and more, fostering a university-driven economy.
-
-3. **Event Page**  
-   Purchase tickets to events happening in Astana and stay up to date with university-related activities and citywide happenings.
-
-4. **User Page**  
-   Personal profile page where users can view and edit their information, manage settings, and log out.
-
-5. **Registration and Login**  
-   Simple and intuitive registration and login pages, allowing quick access to the platform.
-
-6. **Dark/Light Theme**  
-   Users can switch between light and dark modes for a customized user experience.
-
-7. **Language Switch**  
-   Multilingual support, allowing users to switch between different languages.
-
-8. **Contact Us**  
-    A contact form for users to reach out with inquiries or feedback.
-
-9. **FAQ**  
-    A Frequently Asked Questions page to help users navigate the site and find answers to common questions.
-
-**Note:** For this particular assignment, we only added the backend for `home.html`, `user.html`, and the registration/login pages.
+**Key features**:
+- Registration and login (with JWT).
+- Creating, editing, and deleting posts.
+- Adding comments to posts, editing and deleting comments.
+- User roles (`user` and `admin`): admin can edit/delete any posts and comments, while a user can only manage their own.
+- Searching posts by `username`.
 
 ---
 
