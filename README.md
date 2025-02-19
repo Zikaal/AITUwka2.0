@@ -1,4 +1,3 @@
-Below is the **README.md** file in English, including the newly requested details about the university context and key features/pages. You can copy and paste it directly into your project.
 
 ---
 
