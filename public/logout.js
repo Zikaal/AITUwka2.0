@@ -8,5 +8,5 @@ function logout() {
     localStorage.removeItem('username');
     localStorage.removeItem('email');
     alert('You have been logged out.');
-    window.location.href = 'login.html';
+    window.location.href = 'Login.html';
 }
